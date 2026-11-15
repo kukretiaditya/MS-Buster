@@ -28,7 +28,7 @@
 <tr>
 <td valign="middle">
 
-**MS-Buster** (Mass Spectrometry Buster) is a Python tool for extracting and deconvolving **intact LC-MS** data. It was built for the **CBT group at IIT Delhi** to process antibody data from an **Agilent 6545 Q-TOF** LC-MS system, and it is designed to be used by researchers **without programming experience**.
+**MS-Buster** (Mass Spectrometry Buster) is a Python tool for extracting and deconvolving **intact LC-MS** data and it is designed to be used by researchers **without programming experience**.
 
 With MS-Buster you can explore a chromatogram interactively, pick a peak, extract and average the mass spectra under it, and calculate the **intact mass** of the molecule, all in one workflow.
 
@@ -43,7 +43,7 @@ With MS-Buster you can explore a chromatogram interactively, pick a peak, extrac
 
 ### Why it exists
 
-Agilent instruments store each run as a **`.d` folder** whose experiment data sits in binary files. These are normally opened with commercial software or third-party tools that can take a long time to process. MS-Buster reads the `.d` folder directly in Python, so the whole analysis, from raw data to a mass estimate, runs in one place.
+Mass Spectrometry instruments store each run as a **vendor specific file formats for example the `.d` folder for Agilent Instruments** whose experiment data sits in binary files. These are normally opened with commercial software or third-party tools that can take a long time to process. MS-Buster reads the `proprietary` folder directly in Python, so the whole analysis, from raw data to a mass estimate, runs in one place.
 
 ---
 
@@ -65,7 +65,7 @@ Agilent instruments store each run as a **`.d` folder** whose experiment data si
 
 | | Feature | Description |
 |---|---|---|
-| 📂 | **Agilent `.d` parsing** | Reads the binary `.d` folders using the [`multiplierz`](https://github.com/BlaisProteomics/multiplierz) library and organises the data into readable arrays |
+| 📂 | **Agilent `.d` parsing** | Reads the binary `.d` folders and organises the data into readable arrays |
 | 📄 | **Open formats** | Also reads mzML (the standard open format) and plain-text files |
 | 📈 | **Interactive chromatogram** | Plots intensity vs retention time, and a matplotlib span selector lets you choose the peak directly on the plot |
 | 🧮 | **Spectrum averaging** | Extracts every spectrum in the selected window and averages them into one m/z spectrum |
@@ -166,7 +166,7 @@ MS-Buster/
 
 ---
 
-## 🧰 Built with
+<!-- ## 🧰 Built with
 
 | Purpose | Library |
 |---|---|
@@ -175,13 +175,13 @@ MS-Buster/
 | File reading and numerics | `pymzml`, `numpy`, `scipy`, `pandas` (see `requirements.txt` for the full list) |
 | Interface | `tkinter` |
 
----
+--- -->
 
-## 🔭 Future work
+<!-- ## 🔭 Future work
 
 The next step I explored was **machine-learning approaches to de novo peptide sequencing** from data-independent acquisition (DIA) data, which infer sequences directly from fragment spectra instead of matching them against libraries or databases, with a longer-term goal of extending such approaches to fragmentation spectra of **oligonucleotides**. This is **not implemented** in MS-Buster yet.
 
----
+--- -->
 
 <details>
 <summary><b>🛠️ Troubleshooting</b></summary>
