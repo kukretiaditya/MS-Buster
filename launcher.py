@@ -42,7 +42,7 @@ logo_label = tk.Label(root, bg="white")
 logo_y = top_y + (bottom_y - top_y) // 1.7 - logo_height // 2
 logo_label.place(x=center_x - logo_width // 1.7, y=logo_y)
 
-gif_path = r"Untitled design.gif"
+gif_path = r"logo.gif"
 gif = Image.open(gif_path)
 frames = []
 
