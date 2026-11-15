@@ -200,8 +200,7 @@ The next step I explored was **machine-learning approaches to de novo peptide se
 
 <img src="assets/icon.png" alt="" width="36">
 
-**Developed by Aditya Kukreti**
-for the CBT group, IIT Delhi
+
 
 [github.com/kukretiaditya](https://github.com/kukretiaditya)
 
